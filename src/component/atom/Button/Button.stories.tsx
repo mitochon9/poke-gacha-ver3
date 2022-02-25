@@ -16,12 +16,16 @@ Default.args = {
 export const ButtonA = Template.bind({});
 ButtonA.args = {
   children: 'A',
+  disabled: false,
   variant: 'rounded',
+  onClick: () => alert('click A'),
 };
 export const ButtonB = Template.bind({});
 ButtonB.args = {
   children: 'B',
+  disabled: false,
   variant: 'rounded',
+  onClick: () => alert('click B'),
 };
 
 export const CrossUp = Template.bind({});

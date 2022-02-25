@@ -3,9 +3,9 @@ import { ReactNode } from 'react';
 
 export type ButtonProps = {
   children: ReactNode;
-  disabled?: boolean;
+  disabled: boolean;
   variant: 'rounded' | 'square' | 'ellipse';
-  onClick?: VoidFunction;
+  onClick: VoidFunction;
 };
 
 export const Button: React.FC<ButtonProps> = ({ children, disabled, variant, onClick }) => (
@@ -14,9 +14,9 @@ export const Button: React.FC<ButtonProps> = ({ children, disabled, variant, onC
   </button>
 );
 
-Button.prototype = {
-  children: PropTypes.node,
-  disabled: PropTypes.bool,
-  variant: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  disabled: PropTypes.bool.isRequired,
+  variant: PropTypes.any.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
