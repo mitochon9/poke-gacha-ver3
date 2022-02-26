@@ -5,7 +5,6 @@ const Home: React.FC = () => (
     <h1 key='index-page' className='text-lg font-bold text-primary-800'>
       Welcome to Kikagaku Next.js Starter Kit!!
     </h1>
-    <AbButton key='ABbutton' isAnimation={false} />
   </main>
 );
 

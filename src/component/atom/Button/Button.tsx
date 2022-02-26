@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 
 export type ButtonProps = {
   children: ReactNode;
-  disabled: boolean;
+  disabled?: boolean;
   variant: 'rounded' | 'square' | 'ellipse';
   onClick: VoidFunction;
 };
@@ -16,7 +16,7 @@ export const Button: React.FC<ButtonProps> = ({ children, disabled, variant, onC
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  disabled: PropTypes.bool.isRequired,
+  disabled: PropTypes.bool,
   variant: PropTypes.any.isRequired,
   onClick: PropTypes.func.isRequired,
 };

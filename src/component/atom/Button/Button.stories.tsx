@@ -1,60 +1,47 @@
-import { ComponentMeta, Story } from '@storybook/react';
+import { ComponentMeta, ComponentStoryObj } from '@storybook/react';
 import { Button, ButtonProps } from './Button';
+
+type Story = ComponentStoryObj<typeof Button>;
 
 export default {
   title: 'atom/Button',
   component: Button,
 } as ComponentMeta<typeof Button>;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {
+const defaultButton: ButtonProps = {
   children: '',
-};
-
-export const ButtonA = Template.bind({});
-ButtonA.args = {
-  children: 'A',
   disabled: false,
   variant: 'rounded',
-  onClick: () => alert('click A'),
-};
-export const ButtonB = Template.bind({});
-ButtonB.args = {
-  children: 'B',
-  disabled: false,
-  variant: 'rounded',
-  onClick: () => alert('click B'),
+  onClick: () => console.log('click default'),
 };
 
-export const CrossUp = Template.bind({});
-CrossUp.args = {
-  children: '▲',
-  variant: 'square',
-};
-export const CrossDown = Template.bind({});
-CrossDown.args = {
-  children: '▼',
-  variant: 'square',
-};
-export const CrossLeft = Template.bind({});
-CrossLeft.args = {
-  children: '◀',
-  variant: 'square',
-};
-export const CrossRight = Template.bind({});
-CrossRight.args = {
-  children: '▶',
-  variant: 'square',
+export const Default: Story = {
+  args: defaultButton,
 };
 
-export const ButtonStart = Template.bind({});
-ButtonStart.args = {
-  variant: 'ellipse',
+export const ButtonA: Story = {
+  args: { ...defaultButton, children: 'A', onClick: () => console.log('click A') },
+};
+export const ButtonB: Story = {
+  args: { ...defaultButton, children: 'B', onClick: () => console.log('click B') },
 };
 
-export const ButtonSelect = Template.bind({});
-ButtonSelect.args = {
-  variant: 'ellipse',
+export const CrossUp: Story = {
+  args: { ...defaultButton, children: '▲', variant: 'square' },
+};
+export const CrossDown: Story = {
+  args: { ...defaultButton, children: '▼', variant: 'square' },
+};
+export const CrossLeft: Story = {
+  args: { ...defaultButton, children: '◀', variant: 'square' },
+};
+export const CrossRight: Story = {
+  args: { ...defaultButton, children: '▶', variant: 'square' },
+};
+
+export const ButtonStart: Story = {
+  args: { ...defaultButton, variant: 'ellipse' },
+};
+export const ButtonSelect: Story = {
+  args: { ...defaultButton, variant: 'ellipse' },
 };
