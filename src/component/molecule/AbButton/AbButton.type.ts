@@ -1,3 +1,3 @@
 export interface AbButtonProps {
-  isAnimation: boolean;
+  isAnimation?: boolean;
 }

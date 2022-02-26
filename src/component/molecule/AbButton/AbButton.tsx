@@ -1,21 +1,19 @@
 import PropTypes from 'prop-types';
 import { AbButtonProps } from '.';
 import { Button } from '@/component/atom/Button';
-import { ButtonA, ButtonB } from '@/component/atom/Button/Button.stories';
 
 export const baseId = 'molecule-ab-button';
 
 export const AbButton: React.FC<AbButtonProps> = ({ isAnimation }) => {
-  const disabled = isAnimation;
   return (
     <>
       <div className='flex gap-x-4'>
         <div key='button-B-box' className='mt-4'>
           <Button
             key='button-B'
-            disabled={disabled}
+            disabled={isAnimation}
             variant='rounded'
-            onClick={() => alert('click B')}
+            onClick={() => console.log('click B')}
           >
             B
           </Button>
@@ -24,9 +22,9 @@ export const AbButton: React.FC<AbButtonProps> = ({ isAnimation }) => {
         <div key='button-A-box'>
           <Button
             key='button-A'
-            disabled={disabled}
+            disabled={isAnimation}
             variant='rounded'
-            onClick={() => alert('click A')}
+            onClick={() => console.log('click A')}
           >
             A
           </Button>
@@ -37,5 +35,5 @@ export const AbButton: React.FC<AbButtonProps> = ({ isAnimation }) => {
 };
 
 AbButton.propTypes = {
-  isAnimation: PropTypes.bool.isRequired,
+  isAnimation: PropTypes.bool,
 };
