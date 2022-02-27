@@ -2,8 +2,8 @@ export const baseId = 'atom-game-boy-color-logo';
 
 export const GameBoyColorLogo: React.FC = () => (
   <>
-    <div className='text-gray-200 flex text-2xl font-bold italic'>
-      <span key={`${baseId}-game-boy`} className='mr-2'>
+    <div className='text-gray-200 flex text-lg font-bold italic'>
+      <span key={`${baseId}-game-boy`} className='mr-2 text-gray-700'>
         GAME BOY
       </span>
       <div key={`${baseId}-color-box`} className='mt-1 font-kalam'>

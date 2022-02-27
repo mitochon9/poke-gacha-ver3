@@ -9,7 +9,7 @@ export const DeleteDataButton: React.FC<DeleteDataButtonProps> = () => (
       <Button
         key={`${baseId}-button`}
         onClick={() => console.log('click delete')}
-        className='relative w-28 rounded-lg border px-1 text-gray-800 shadow-none before:absolute before:-top-6 before:left-1/2 before:-translate-x-1/2 before:content-["PressStart"]'
+        className='relative w-16 rounded-md border text-[8px] text-gray-800 before:absolute before:-top-3 before:left-1/2 before:-translate-x-1/2 before:content-["PressStart"]'
       >
         データ削除
       </Button>
