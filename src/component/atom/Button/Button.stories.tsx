@@ -11,7 +11,6 @@ export default {
 const defaultButton: ButtonProps = {
   children: '',
   disabled: false,
-  variant: 'rounded',
   onClick: () => console.log('click default'),
 };
 
@@ -20,10 +19,20 @@ export const Default: Story = {
 };
 
 export const ButtonA: Story = {
-  args: { ...defaultButton, children: 'A', onClick: () => console.log('click A') },
+  args: {
+    ...defaultButton,
+    children: 'A',
+    variant: 'rounded',
+    onClick: () => console.log('click A'),
+  },
 };
 export const ButtonB: Story = {
-  args: { ...defaultButton, children: 'B', onClick: () => console.log('click B') },
+  args: {
+    ...defaultButton,
+    children: 'B',
+    variant: 'rounded',
+    onClick: () => console.log('click B'),
+  },
 };
 
 export const CrossUp: Story = {
