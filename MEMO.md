@@ -10,3 +10,9 @@
 ## A ボタン、 B ボタンのまとまりである AbButton というコンポーネント( molecule )を作成
 
 - とりあえず isAnimation を props として渡して実装
+
+## UI とロジックを分けて開発する
+
+- UI 部分の細かいところから作っていき、合わせていく
+
+[Container / Presentational 構成【React のコンポーネント設計】](https://www.nochitoku-it.com/containr-1)

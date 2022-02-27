@@ -5,7 +5,7 @@ export type ButtonProps = {
   children?: ReactNode;
   className?: string;
   disabled?: boolean;
-  variant: 'rounded' | 'square' | 'ellipse';
+  variant?: 'rounded' | 'square' | 'ellipse';
   onClick: VoidFunction;
 };
 
@@ -30,6 +30,6 @@ Button.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   disabled: PropTypes.bool,
-  variant: PropTypes.any.isRequired,
+  variant: PropTypes.any,
   onClick: PropTypes.func.isRequired,
 };
