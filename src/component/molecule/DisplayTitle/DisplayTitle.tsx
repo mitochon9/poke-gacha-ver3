@@ -5,7 +5,7 @@ export const baseId = 'molecule-display-title';
 export const DisplayTitle: React.FC<DisplayTitleProps> = () => (
   <>
     <div className='text-center font-dot'>
-      <h1 key={`${baseId}-title`} className='scale-y-125 text-2xl font-extrabold'>
+      <h1 key={`${baseId}-title`} className='scale-y-125 text-lg font-bold'>
         ポケットモンスター
       </h1>
       <p key={`${baseId}-subtitle`} className='mt-1 text-sm font-bold tracking-widest'>
