@@ -44,7 +44,12 @@ module.exports = {
       xl: '1.875rem',
       '2xl': '2.25rem',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        kalam: ['Kalam'],
+        dot: ['DotGothic16, sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
