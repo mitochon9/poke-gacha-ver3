@@ -9,13 +9,13 @@
   @apply active:shadow-none;
 }
 .rounded {
-  @apply h-16 w-16 rounded-full bg-gray-900 text-gray-700 shadow-sm shadow-black;
+  @apply h-12 w-12 rounded-full bg-gray-900 text-gray-700 shadow-sm shadow-black;
 }
 .square {
-  @apply h-10 w-10 bg-gray-900 text-lg text-gray-700 shadow-sm shadow-black;
+  @apply h-8 w-8 bg-gray-900 text-lg text-gray-700 shadow-sm shadow-black;
 }
 .ellipse {
-  @apply h-5 w-14 rounded-full bg-gray-900 shadow-sm shadow-black;
+  @apply h-4 w-12 rounded-full bg-gray-900 shadow-sm shadow-black;
 }
 
 /* トップディスプレイの Press A button 点滅 */

@@ -10,7 +10,7 @@ export type SpeakerProps = {
 export const Speaker: React.FC<SpeakerProps> = ({ volumeHole }) => {
   return (
     <>
-      <div key='volume-hole-box' className='grid h-20 w-20 grid-cols-8 grid-rows-[8] gap-[2px]'>
+      <div key='volume-hole-box' className='grid h-16 w-16 grid-cols-8 grid-rows-[8] gap-[2px]'>
         {volumeHole.map((item, index) => (
           <div
             key={item.id}
