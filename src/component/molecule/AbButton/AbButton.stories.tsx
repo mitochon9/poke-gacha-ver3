@@ -1,5 +1,6 @@
+import { expect } from '@storybook/jest';
 import { ComponentMeta, ComponentStoryObj } from '@storybook/react';
-import { userEvent, screen } from '@storybook/testing-library';
+import { userEvent, screen, within } from '@storybook/testing-library';
 import { AbButton } from './AbButton';
 import { AbButtonProps } from '.';
 
@@ -24,5 +25,9 @@ export const DisabledButton: Story = {
 
 export const ClickButtonA: Story = {
   ...defaultAbButton,
-  play: async () => userEvent.click(screen.getByText(/A/)),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByText(/A/));
+  },
 };
