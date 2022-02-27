@@ -5,7 +5,7 @@ export const baseId = 'molecule-cross-button';
 
 export const CrossButton: React.FC<CrossButtonProps> = ({ isAnimation }) => (
   <>
-    <div className='grid w-[120px] grid-cols-3 grid-rows-3'>
+    <div className='grid w-[96px] grid-cols-3 grid-rows-3'>
       {/* 上段 */}
       <Button
         key={`${baseId}-up`}
