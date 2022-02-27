@@ -10,7 +10,7 @@ export const baseId = 'organism-display';
 
 export const Display: React.FC<DisplayProps> = () => (
   <>
-    <div className='relative h-80 w-80 rounded-2xl border-x-[48px] border-b-[48px] border-t-[36px] border-gray-900'>
+    <div className='relative h-80 w-80 rounded-2xl border-x-[48px] border-b-[48px] border-t-[36px] border-gray-900 bg-primary-50'>
       <div key={`${baseId}-title-box`}>
         <DisplayTitle key={`${baseId}-title`} />
       </div>
