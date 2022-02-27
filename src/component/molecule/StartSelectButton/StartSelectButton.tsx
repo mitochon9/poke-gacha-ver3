@@ -13,9 +13,7 @@ export const StartSelectButton: React.FC<StartSelectButtonProps> = ({ isAnimatio
           disabled={isAnimation}
           onClick={() => console.log('click select')}
           className='relative text-gray-900 after:absolute after:-bottom-6 after:left-1/2 after:-translate-x-1/2 after:text-gray-700 after:content-["Select"]'
-        >
-          Select
-        </Button>
+        />
       </div>
 
       <div key='button-start-box'>
@@ -25,9 +23,7 @@ export const StartSelectButton: React.FC<StartSelectButtonProps> = ({ isAnimatio
           disabled={isAnimation}
           onClick={() => console.log('click start')}
           className='relative text-gray-900 after:absolute after:-bottom-6 after:left-1/2 after:-translate-x-1/2 after:text-gray-700 after:content-["Start"]'
-        >
-          Start
-        </Button>
+        />
       </div>
     </div>
   </>
